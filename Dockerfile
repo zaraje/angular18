@@ -15,7 +15,6 @@ FROM nginx:alpine
 
 COPY --from=build /app/dist/angular18/browser  /usr/share/nginx/html
 
-EXPOSE $PORT
 
 CMD [ "nginx","-g","daemon off;" ]
 
